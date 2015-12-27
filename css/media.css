@@ -1,0 +1,260 @@
+/*==========  Desktop First Method  ==========*/
+
+/* <1772 */
+@media (max-width: 1772px){
+
+	.main-name{
+		font-size: 100px;
+	}
+
+	.basket-content{
+		left: 68%;
+	}
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+	.parallax{
+		background-image: url(../img/header_parallax/bg-1200.png);
+	}
+
+	.card-1, .card-2, .card-3, .card-4 {
+		width: 222px;
+		margin: 0 0 20px 8px;
+	}
+
+	.basket-content{
+		left: 49%;
+	}
+
+	.top-card img{
+		width: 200px;
+		height: 200px;
+	}
+
+	.pizza-name-card{
+		font-size: 20px;
+	}
+
+	.line-card{
+		margin: -12px auto 0 auto;
+	}
+
+	.wrapp{
+		margin-top: -110px;
+	}
+
+	.phone-number p{
+		font-size: 26px;
+	}
+
+
+}
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.card-1, .card-2, .card-3, .card-4 {
+		width: 266px;
+		display: inline-block;
+		margin: 20px 47px;
+		position: relative;
+	}
+	
+	.card-2, .card-4{
+		float: right;
+	}
+
+	.basket-content{
+		left: 51%;
+	}
+
+	.wrapp{
+		margin-top: -140px;
+	}
+
+	.phone-number p{
+		font-size: 16px;
+	}
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	
+	.card-1, .card-2, .card-3, .card-4 {
+		width: 266px;
+		display: inline-block;
+		margin: 20px 40px;
+		position: relative;
+	}
+	
+	.card-2, .card-4{
+		float: right;
+	}
+
+	.basket-content{
+		left: 47%;
+	}
+
+	.wrapp{
+		margin-top: -200px;
+	}
+
+	.phone-number p{
+		display: none;
+	}
+}
+
+
+/* FOR CARDS 600px - 721px*/
+@media (max-width: 721px){
+	.card-1, .card-3{
+		width: 266px;
+		display: inline-block;
+		margin: 20px 10px;
+		position: relative;
+
+	}
+
+	.card-2, .card-4{
+		width: 266px;
+		display: inline-block;
+		margin: 20px 10px;
+		position: relative;
+		float: right;
+	}	
+
+	.basket-content{
+		left: 36%;
+	}
+
+	.wrapp{
+		margin-top: -250px;
+	}
+
+
+
+}
+
+/* FOR CARDS  480px-600px */
+@media (max-width: 600px){
+	.card-1, .card-2, .card-3, .card-4{
+		width: 266px;
+		display: block;
+		margin: 20px auto;
+		position: relative;
+		float: none;
+	}
+
+	.main-name{
+		width: 446px;
+	}
+
+	.basket-content{
+		width: 210px;
+		left: 30%;
+	}
+
+	.wrapp{
+		margin-top: -340px;
+	}
+	
+	.baz{
+		display: none;
+	}
+
+	.mr{
+		left: 60%;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.card-1, .card-2, .card-3, .card-4{
+		width: 266px;
+		display: block;
+		margin: 20px auto;
+		position: relative;
+	}
+
+	.main-name{
+		width: 296px;
+		font-size: 76px;
+	}
+
+	.basket-content{
+		width: 210px;
+		left: -9%;
+	}
+
+	.wrapp{
+		margin-top: -400px;
+	}
+
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

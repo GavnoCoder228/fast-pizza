@@ -1,0 +1,726 @@
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+html.js .loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+body {
+  font-family: "RobotoRegular", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.parallax {
+  width: 100%;
+  height: 610px;
+  background-image: url("../img/header_parallax/bg.png");
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.parallax-first, .parallax-second, .parallax-third {
+  display: inline-block;
+  width: 30%;
+}
+
+/*.parallax-first
+	width: 30%
+	height: 400px*/
+.parallax-second {
+  width: 100%;
+  height: 600px;
+}
+
+.main-name {
+  font-family: "GearedSlab";
+  font-size: 150px;
+  text-align: center;
+  color: #F5F5F5;
+  display: block;
+  width: 576px;
+  position: relative;
+  margin: 0 auto;
+  text-shadow: black 1px 0px, black 1px 1px, black 0px 1px, black -1px 1px, black -1px 0px, black -1px -1px, black 0px -1px, black 1px -1px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px;
+}
+
+.header-logo {
+  width: 100%;
+}
+
+.baz {
+  width: 262px;
+  height: 159px;
+  background-image: url("../img/header_parallax/baz.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 7%;
+  top: 64%;
+}
+
+.mr {
+  width: 164px;
+  height: 238px;
+  background-image: url("../img/header_parallax/mr.png");
+  position: absolute;
+  left: 80%;
+  top: 50%;
+}
+
+.button-down {
+  width: 200px;
+  height: 50px;
+  border: #15bdc3 2px solid;
+  border-radius: 10px;
+  margin: 270px auto 0;
+  position: relative;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: rgba(21, 189, 195, 0.8);
+}
+
+.button-down p {
+  margin: 9px 0 0 35px;
+  color: #f3f3f3;
+  font-family: RobotoRegular;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-down:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: rgba(21, 189, 195, 0.8) 2px solid;
+}
+
+.button-down:hover p {
+  color: #15bdc3;
+}
+
+.button-down:active {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: rgba(255, 255, 255, 0.7) 2px solid;
+}
+
+/*.parallax-third
+	width: 30%
+	height: 400px*/
+.top-line {
+  width: 100%;
+  height: 80px;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.phone-number {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+}
+
+.phone-number img {
+  display: inline-block;
+  width: 55px;
+  height: 50px;
+  margin: 0 auto;
+  float: left;
+}
+
+.phone-number p {
+  display: inline-block;
+  font-size: 28px;
+  font-family: RobotoLight;
+  text-align: left;
+  margin: 0;
+  padding: 8px 0 8px 20px;
+}
+
+.basket {
+  float: right;
+}
+
+.basket img {
+  display: block;
+  width: 55px;
+  height: 50px;
+  margin: 15px 0;
+}
+
+.basket-content {
+  width: 250px;
+  height: 550px;
+  background-color: #FFF;
+  position: absolute;
+  left: 75%;
+  z-index: 8000;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin-top: 15px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.empty {
+  width: 100%;
+  height: 550px;
+}
+
+.empty img {
+  display: block;
+  width: 200px;
+  height: 350px;
+  margin: auto;
+}
+
+.empty p {
+  display: block;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  font-family: "RobotoLight";
+  margin: 0 auto;
+}
+
+.basket-pizza {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.basket-pizza:hover {
+  overflow-y: scroll;
+}
+
+.basket-pizza:hover::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.basket-pizza:hover::-webkit-scrollbar {
+  width: 6px;
+}
+
+.basket-pizza:hover::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.basket-pizzas-1 {
+  width: 100%;
+  height: 180px;
+  display: inline-block;
+}
+
+.basket-pizzas-1 img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: relative;
+  left: -16%;
+  top: -8%;
+}
+
+#pizza-name {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
+  margin: 0;
+}
+
+.del {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 90%;
+  top: -21px;
+  z-index: 9999;
+}
+
+#del {
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+}
+
+.minus, .plus, .number {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin: 0 6px;
+  position: relative;
+  top: -100px;
+  left: 35%;
+}
+
+#minus, #plus {
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+}
+
+#number {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: -37px -1px;
+  font-size: 66px;
+  position: absolute;
+}
+
+.minus:hover, .plus:hover, .del:hover {
+  cursor: pointer;
+}
+
+.pizza-cost {
+  width: 90%;
+  height: 40px;
+  position: relative;
+  top: -31%;
+}
+
+.pizza-cost p {
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  position: absolute;
+}
+
+.all-cost {
+  width: 100%;
+  height: 100px;
+  background-color: #15bdc3;
+  border-radius: 0 0 4px 4px;
+  position: relative;
+  top: -2px;
+  z-index: 2;
+}
+
+.all-cost p {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  position: relative;
+  top: -9px;
+  margin: 4px 0;
+}
+
+.line img {
+  width: 70%;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.fanc-form {
+  text-decoration: none;
+}
+
+.fanc-form:hover {
+  text-decoration: none;
+}
+
+.purchase {
+  width: 130px;
+  height: 45px;
+  border: white 2px solid;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+.purchase p {
+  margin: 5px auto;
+  text-align: center;
+  color: white;
+  font-family: RobotoRegular;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.purchase:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.purchase:hover p {
+  color: #15bdc3;
+}
+
+.purchase:active {
+  background-color: white;
+  border: white 2px solid;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.wrapp {
+  background-color: #FFF;
+}
+
+#carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+  height: 640px;
+  width: 266px;
+  display: inline-block;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 7px;
+  margin: 10px 0 20px 12px;
+  clear: both;
+  position: relative;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  background-color: white;
+}
+
+.top-card {
+  width: 100%;
+  height: 390px;
+}
+
+.top-card img {
+  width: 230px;
+  height: 230px;
+  display: block;
+  margin: 0 auto;
+  padding: 7px;
+  position: relative;
+}
+
+.pizza-name-card {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+  font-family: "RobotoLight";
+  position: relative;
+}
+
+.price-card {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: -5px auto;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  color: #15bdc3;
+}
+
+.grivnas-card {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: -20px 0 0 0;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "RobotoLight";
+  position: relative;
+  color: #15bdc3;
+}
+
+.buy-card {
+  width: 130px;
+  height: 45px;
+  border: #15bdc3 2px solid;
+  border-radius: 10px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.buy-card p {
+  margin: 5px auto;
+  text-align: center;
+  color: #15bdc3;
+  font-size: 18px;
+}
+
+.buy-card:hover {
+  background-color: rgba(21, 189, 195, 0.8);
+  cursor: pointer;
+}
+
+.buy-card:hover p {
+  color: white;
+}
+
+.buy-card:active {
+  background-color: rgba(21, 189, 195, 0.8);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  border: white 2 px solid;
+}
+
+.buy-card:active p {
+  color: white;
+}
+
+.bottom-card {
+  width: 100%;
+  height: 230px;
+}
+
+.line-card {
+  width: 100%;
+  height: 2px;
+  position: relative;
+  margin: 10px auto;
+}
+
+.line-card img {
+  width: 70%;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.info-card {
+  height: 120px;
+  width: 100%;
+  position: absolute;
+}
+
+.info-card span {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: grey;
+  margin: 0;
+  position: relative;
+}
+
+.info-card p {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-family: "RobotoLight";
+  color: grey;
+  margin: 0;
+  padding: 0 2px;
+  position: relative;
+}
+
+.icon-card {
+  width: 100%;
+  height: 100px;
+}
+
+.diam {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+}
+
+.diam img {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 47px;
+  margin: 20px auto;
+}
+
+.diam p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: -13px auto;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "RobotoLight";
+}
+
+.weight {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 80%;
+  right: 20%;
+}
+
+.weight img {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 47px;
+  margin: 20px auto;
+}
+
+.weight p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: -13px auto;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "RobotoLight";
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.carousel {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  margin: 40px 0 80px 0;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: lightgreen;
+}
+
+.hidden {
+  display: none;
+}
+
+.purchase-form {
+  width: 400px;
+  height: auto;
+}
+
+.purchase-form .form-text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.purchase-form input {
+  display: block;
+  line-height: 40px;
+  margin: 0 auto 12px;
+  width: 90%;
+  background-color: rgba(21, 189, 195, 0.5);
+  border: none;
+  border-radius: 4px;
+}
+
+.purchase-form ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.purchase-form button {
+  display: block;
+  width: 130px;
+  height: 50px;
+  border: white 2px solid;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #15bdc3;
+}
+
+.purchase-form button p {
+  margin: 5px auto;
+  text-align: center;
+  color: white;
+  font-family: RobotoRegular;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.purchase-form button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.purchase-form button:hover p {
+  color: #15bdc3;
+}
+
+.purchase-form button:active {
+  background-color: white;
+  border: white 2px solid;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
